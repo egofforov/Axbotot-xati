@@ -7,11 +7,11 @@
 
 body {
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .container {
-  width: 1056px;
+  width: 1080px;
   margin: 0 auto;
   background: url(/img/bg.png);
   background-position: center;
@@ -21,6 +21,8 @@ body {
 }
 
 a {
+  display: block;
+  color: black;
   text-decoration: none;
 }
 
@@ -43,7 +45,7 @@ span {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.8));
   border-radius: 1rem;
   padding: 1rem;
 }
@@ -55,7 +57,7 @@ span {
 
 .logo-image__title {
   border-radius: 50%;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .with {
@@ -88,11 +90,12 @@ span {
 
 .sidebar-left {
   width: 45%;
+  border: 1px solid violet;
   text-align: center;
-  background: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.8));
   border-radius: 1rem;
   padding: 1rem;
-  margin-right: 5%;
+  margin-right: 1%;
 }
 
 .main-section__title {
@@ -109,12 +112,12 @@ span {
 
 .text-box__title {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-top: 1rem;
 }
 
 .text-box__subtitle {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 1.5rem;
   margin-top: 1rem;
 }
@@ -126,6 +129,7 @@ span {
 }
 
 .location {
+  font-size: 1.2rem;
   font-weight: bold;
   margin-top: 1rem;
 }
@@ -143,6 +147,7 @@ span {
 }
 
 .tel-number {
+  font-size: 1.1rem;
   font-weight: bold;
   margin-top: 1rem;
 }
@@ -156,41 +161,46 @@ span {
 }
 
 .email {
+  font-size: 1.1rem;
   display: block;
 }
 
 .qrcod {
-  display: block;
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 
 .sidebar-right {
-  background: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5));
+  padding: 0.5rem;
+  border: 1px solid violet;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.8));
   border-radius: 1rem;
-  padding: 1rem;
 }
 
 .subject {
-  font-weight: bold;
-  font-size: 1.8rem;
+  margin-top: 2rem;
+  font-weight: 600;
+  line-height: 2rem;
+  font-size: 1.6rem;
+  text-align: center;
 }
 
 .data-time {
   font-weight: bold;
   font-style: italic;
   font-size: 1.4rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
   text-align: center;
 }
 
 .anjuman {
   font-weight: bold;
   font-size: 1.2rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .items {
   margin-top: 1rem;
+  margin-left: 2rem;
 }
 
 .item-list {
@@ -199,16 +209,22 @@ span {
 }
 
 .anjuman-subtitle {
+  margin-top: 2rem;
   font-weight: bold;
   font-size: 1.8rem;
   text-align: center;
 }
 
 .anjuman-items {
-  margin-top: 1rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
 }
 
 .anjuman-items__list {
   font-size: 1.2rem;
   margin: 0.8rem 0;
+}
+
+.border {
+  border: 1px solid violet;
 }
